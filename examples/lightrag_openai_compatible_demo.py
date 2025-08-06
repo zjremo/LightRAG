@@ -8,11 +8,12 @@ from lightrag.llm.openai import openai_complete_if_cache
 from lightrag.llm.ollama import ollama_embed
 from lightrag.utils import EmbeddingFunc, logger, set_verbose_debug
 from lightrag.kg.shared_storage import initialize_pipeline_status
+from lightrag.llm.openai import openai_embed
+from lightrag.rerank import custom_rerank
 
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path=".env", override=False)
-
+load_dotenv(dotenv_path=".env", override=False) # 从.env文件中获取配置
 WORKING_DIR = "./dickens"
 
 
@@ -32,7 +33,8 @@ def configure_logging():
     )
 
     print(f"\nLightRAG compatible demo log file: {log_file_path}\n")
-    os.makedirs(os.path.dirname(log_dir), exist_ok=True)
+    # os.makedirs(os.path.dirname(log_dir), exist_ok=True) # 只会创建log_dir不存在的父目录
+    os.makedirs(log_dir, exist_ok=True)
 
     # Get log file max size and backup count from environment variables
     log_max_bytes = int(os.getenv("LOG_MAX_BYTES", 10485760))  # Default 10MB
@@ -88,13 +90,26 @@ if not os.path.exists(WORKING_DIR):
 async def llm_model_func(
     prompt, system_prompt=None, history_messages=[], keyword_extraction=False, **kwargs
 ) -> str:
+    # Ensure enable_thinking is set to False for non-streaming calls
     return await openai_complete_if_cache(
         os.getenv("LLM_MODEL", "deepseek-chat"),
         prompt,
         system_prompt=system_prompt,
         history_messages=history_messages,
-        api_key=os.getenv("LLM_BINDING_API_KEY") or os.getenv("OPENAI_API_KEY"),
+        api_key=os.getenv("LLM_BINDING_API_KEY") or os.getenv("OPENAI_API_KEY"), # 提供备选方案
         base_url=os.getenv("LLM_BINDING_HOST", "https://api.deepseek.com"),
+        **kwargs,
+    )
+
+async def my_rerank_func(query: str, documents: list, top_n: int = None, **kwargs):
+    """Custom rerank function with all settings included"""
+    return await custom_rerank(
+        query=query,
+        documents=documents,
+        model=os.getenv("RERANK_MODEL", "bge-reranker-v2-m3"),
+        base_url=os.getenv("RERANK_BINDING_HOST", "###########"),
+        api_key=os.getenv("RERANK_BINDING_API_KEY", "123456"),
+        top_n=top_n or 10,
         **kwargs,
     )
 
@@ -112,12 +127,19 @@ async def initialize_rag():
         embedding_func=EmbeddingFunc(
             embedding_dim=int(os.getenv("EMBEDDING_DIM", "1024")),
             max_token_size=int(os.getenv("MAX_EMBED_TOKENS", "8192")),
-            func=lambda texts: ollama_embed(
+            # func=lambda texts: ollama_embed(
+            #     texts,
+            #     embed_model=os.getenv("EMBEDDING_MODEL", "bge-m3:latest"),
+            #     host=os.getenv("EMBEDDING_BINDING_HOST", "http://localhost:11434"),
+            # ),
+            func=lambda texts: openai_embed(
                 texts,
-                embed_model=os.getenv("EMBEDDING_MODEL", "bge-m3:latest"),
-                host=os.getenv("EMBEDDING_BINDING_HOST", "http://localhost:11434"),
+                model="bge-m3",
+                base_url=os.getenv("EMBEDDING_BINDING_HOST", "###########"),
+                api_key=os.getenv("EMBEDDING_BINDING_API_KEY", "123456") 
             ),
         ),
+        rerank_model_func=my_rerank_func,
     )
 
     await rag.initialize_storages()
@@ -158,12 +180,12 @@ async def main():
         print(f"Test dict: {test_text}")
         print(f"Detected embedding dimension: {embedding_dim}\n\n")
 
-        with open("./book.txt", "r", encoding="utf-8") as f:
+        with open("./testfiles/book.txt", "r", encoding="utf-8") as f:
             await rag.ainsert(f.read())
 
         # Perform naive search
         print("\n=====================")
-        print("Query mode: naive")
+        print("Query mode: naive") # naive模式直接调用LLM生成回答，不进行任何检索
         print("=====================")
         resp = await rag.aquery(
             "What are the top themes in this story?",
@@ -176,7 +198,7 @@ async def main():
 
         # Perform local search
         print("\n=====================")
-        print("Query mode: local")
+        print("Query mode: local") # local模式使用本地存储的文档进行检索
         print("=====================")
         resp = await rag.aquery(
             "What are the top themes in this story?",
@@ -189,7 +211,7 @@ async def main():
 
         # Perform global search
         print("\n=====================")
-        print("Query mode: global")
+        print("Query mode: global") # global模式使用知识图谱进行检索
         print("=====================")
         resp = await rag.aquery(
             "What are the top themes in this story?",
@@ -202,7 +224,7 @@ async def main():
 
         # Perform hybrid search
         print("\n=====================")
-        print("Query mode: hybrid")
+        print("Query mode: hybrid") # hybrid模式同时使用本地存储的文档和知识图谱进行检索
         print("=====================")
         resp = await rag.aquery(
             "What are the top themes in this story?",

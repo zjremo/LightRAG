@@ -6,12 +6,14 @@ import json
 import logging
 from typing import Any, Dict, List, Literal, Optional
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from lightrag.base import QueryParam
 from ..utils_api import get_combined_auth_dependency
 from pydantic import BaseModel, Field, field_validator
 
 from ascii_colors import trace_exception
+
+from functools import reduce
 
 router = APIRouter(tags=["query"])
 
@@ -22,80 +24,92 @@ class QueryRequest(BaseModel):
         description="The query text",
     )
 
-    mode: Literal["local", "global", "hybrid", "naive", "mix", "bypass"] = Field(
-        default="mix",
-        description="Query mode",
-    )
+    mode: Literal["local", "global", "hybrid", "naive", "mix",
+                  "bypass"] = Field(
+                      default="mix",
+                      description="Query mode",
+                  )
 
     only_need_context: Optional[bool] = Field(
         default=None,
-        description="If True, only returns the retrieved context without generating a response.",
+        description=
+        "If True, only returns the retrieved context without generating a response.",
     )
 
     only_need_prompt: Optional[bool] = Field(
         default=None,
-        description="If True, only returns the generated prompt without producing a response.",
+        description=
+        "If True, only returns the generated prompt without producing a response.",
     )
 
     response_type: Optional[str] = Field(
         min_length=1,
         default=None,
-        description="Defines the response format. Examples: 'Multiple Paragraphs', 'Single Paragraph', 'Bullet Points'.",
+        description=
+        "Defines the response format. Examples: 'Multiple Paragraphs', 'Single Paragraph', 'Bullet Points'.",
     )
 
     top_k: Optional[int] = Field(
         ge=1,
         default=None,
-        description="Number of top items to retrieve. Represents entities in 'local' mode and relationships in 'global' mode.",
+        description=
+        "Number of top items to retrieve. Represents entities in 'local' mode and relationships in 'global' mode.",
     )
 
     chunk_top_k: Optional[int] = Field(
         ge=1,
         default=None,
-        description="Number of text chunks to retrieve initially from vector search and keep after reranking.",
+        description=
+        "Number of text chunks to retrieve initially from vector search and keep after reranking.",
     )
 
     max_entity_tokens: Optional[int] = Field(
         default=None,
-        description="Maximum number of tokens allocated for entity context in unified token control system.",
+        description=
+        "Maximum number of tokens allocated for entity context in unified token control system.",
         ge=1,
     )
 
     max_relation_tokens: Optional[int] = Field(
         default=None,
-        description="Maximum number of tokens allocated for relationship context in unified token control system.",
+        description=
+        "Maximum number of tokens allocated for relationship context in unified token control system.",
         ge=1,
     )
 
     max_total_tokens: Optional[int] = Field(
         default=None,
-        description="Maximum total tokens budget for the entire query context (entities + relations + chunks + system prompt).",
+        description=
+        "Maximum total tokens budget for the entire query context (entities + relations + chunks + system prompt).",
         ge=1,
     )
 
     conversation_history: Optional[List[Dict[str, Any]]] = Field(
         default=None,
-        description="Stores past conversation history to maintain context. Format: [{'role': 'user/assistant', 'content': 'message'}].",
+        description=
+        "Stores past conversation history to maintain context. Format: [{'role': 'user/assistant', 'content': 'message'}].",
     )
 
     history_turns: Optional[int] = Field(
         ge=0,
         default=None,
-        description="Number of complete conversation turns (user-assistant pairs) to consider in the response context.",
+        description=
+        "Number of complete conversation turns (user-assistant pairs) to consider in the response context.",
     )
 
     ids: list[str] | None = Field(
-        default=None, description="List of ids to filter the results."
-    )
+        default=None, description="List of ids to filter the results.")
 
     user_prompt: Optional[str] = Field(
         default=None,
-        description="User-provided prompt for the query. If provided, this will be used instead of the default value from prompt template.",
+        description=
+        "User-provided prompt for the query. If provided, this will be used instead of the default value from prompt template.",
     )
 
     enable_rerank: Optional[bool] = Field(
         default=None,
-        description="Enable reranking for retrieved text chunks. If True but no rerank model is configured, a warning will be issued. Default is True.",
+        description=
+        "Enable reranking for retrieved text chunks. If True but no rerank model is configured, a warning will be issued. Default is True.",
     )
 
     @field_validator("query", mode="after")
@@ -120,7 +134,9 @@ class QueryRequest(BaseModel):
     def to_query_params(self, is_stream: bool) -> "QueryParam":
         """Converts a QueryRequest instance into a QueryParam instance."""
         # Use Pydantic's `.model_dump(exclude_none=True)` to remove None values automatically
-        request_data = self.model_dump(exclude_none=True, exclude={"query"})
+        request_data = self.model_dump(exclude_none=True,
+                                       exclude={"query"
+                                                })  # 排除值为none的字段，但是保留query字段
 
         # Ensure `mode` and `stream` are set explicitly
         param = QueryParam(**request_data)
@@ -129,17 +145,89 @@ class QueryRequest(BaseModel):
 
 
 class QueryResponse(BaseModel):
-    response: str = Field(
-        description="The generated response",
-    )
+    response: str = Field(description="The generated response", )
+
+# 兼容dify retrieval格式
+class DifyQueryResponse(BaseModel):
+    records: List[Dict[str,
+                       Any]] = Field(description="The generated response", )
 
 
 def create_query_routes(rag, api_key: Optional[str] = None, top_k: int = 60):
     combined_auth = get_combined_auth_dependency(api_key)
 
-    @router.post(
-        "/query", response_model=QueryResponse, dependencies=[Depends(combined_auth)]
-    )
+    @router.post("/dify/retrieval", response_model=DifyQueryResponse) # 为dify调用lightrag提供一个接口
+    async def dify_retrieval_query_text(request: Request):
+        """
+        Handle a POST request at the /query endpoint to process user queries using RAG capabilities.
+
+        Parameters:
+            request (QueryRequest): The request object containing the query parameters.
+        Returns:
+            QueryResponse: A Pydantic model containing the result of the query processing.
+                       If a string is returned (e.g., cache hit), it's directly returned.
+                       Otherwise, an async generator may be used to build the response.
+
+        Raises:
+            HTTPException: Raised when an error occurs during the request handling process,
+                       with status code 500 and detail containing the exception message.
+        """
+        try:
+            req = await request.json()
+            retrieval_setting = req.get("retrieval_setting", {})
+            query = req.get("query", None)
+            score_threshold = retrieval_setting.get("score_threshold", 0.7)
+            if query is None:
+                raise HTTPException(status_code=400,
+                                    detail="query is required")
+
+            param_dict = {
+                "top_k": retrieval_setting.get("top_k", top_k),
+            }
+
+            param = QueryParam(**param_dict)
+            response = await rag.aquery(query, param=param)
+            resq = {"metadata": {}, "score": score_threshold} # response只有一个，直接作为得分阈值返回
+            records = []
+
+            def getTitle(title_text):
+                dc_segments: set = set()
+                start = 0
+                while True:
+                    dc_pos = title_text.find("[DC]", start)
+                    if dc_pos == -1:
+                        break
+                    end_pos = title_text.find("\n", dc_pos)
+                    if end_pos == -1:
+                        end_pos = len(title_text)
+                    dc_segments.add(title_text[dc_pos:end_pos].strip())
+                    start = end_pos + 1
+                return reduce(lambda x, y: x + '\n' + y, dc_segments,
+                              "").strip()
+
+            def updateresq(dic: dict):
+                resq.update(dic)
+                records.append(resq)
+
+            # If response is a string (e.g. cache hit), return directly
+            if isinstance(response, str):
+                updateresq({"content": response, "title": getTitle(response)})
+                return DifyQueryResponse(records=records)
+            if isinstance(response, dict):
+                result = json.dumps(response, indent=2)
+                updateresq({"content": result, "title": getTitle(result)})
+                return DifyQueryResponse(records=records)
+            else:
+                result = str(response)
+                updateresq({"content": result, "title": getTitle(result)})
+                return DifyQueryResponse(records=records)
+        except Exception as e:
+            trace_exception(e)
+            raise HTTPException(status_code=500, detail=str(e))
+
+    @router.post("/query",
+                 response_model=QueryResponse,
+                 dependencies=[Depends(combined_auth)])
     async def query_text(request: QueryRequest):
         """
         Handle a POST request at the /query endpoint to process user queries using RAG capabilities.
@@ -214,7 +302,8 @@ def create_query_routes(rag, api_key: Optional[str] = None, top_k: int = 60):
                     "Cache-Control": "no-cache",
                     "Connection": "keep-alive",
                     "Content-Type": "application/x-ndjson",
-                    "X-Accel-Buffering": "no",  # Ensure proper handling of streaming response when proxied by Nginx
+                    "X-Accel-Buffering":
+                    "no",  # Ensure proper handling of streaming response when proxied by Nginx
                 },
             )
         except Exception as e:
