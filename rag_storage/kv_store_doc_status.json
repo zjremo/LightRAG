@@ -1,0 +1,56 @@
+{
+  "doc-597602ca25ed84d7a41895f61f930612": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-cfac3998afa8ac36f23c14ef32bc776d",
+      "chunk-e3acb8e42b770bfbf34e0163f1d903e3"
+    ],
+    "content_summary": "计算机学院 网络空间安全学院\n2023 年免试研究生推荐工作安排及实施细则\n一、 学院推免工作的指导思想和工作原则\n根据南党发〔2021〕63号关于修订《南开大学推荐优秀应届本科毕业生免试攻读研究生工作实施办法》的通知和教通字【2022】38 号-《关于做好 2023 年推荐优秀应届本科毕业生免试攻读研究生准备工作的通知》文件要求，本着公平、择优的原则，结合我院情况，具体安排推荐工作如下：\n二、学院推免工作的基本条件\n1. 推荐标准将以学校要求为基本条件，同时考虑学生综合素质的培养。\n（1）推免...",
+    "content_length": 2542,
+    "created_at": "2025-08-05T07:34:25.341455+00:00",
+    "updated_at": "2025-08-05T07:35:28.262271+00:00",
+    "file_path": "2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx",
+    "track_id": "upload_20250805_153319_add8b769",
+    "metadata": {
+      "processing_start_time": 1754379265,
+      "processing_end_time": 1754379328
+    }
+  },
+  "doc-8b2c86f7511cc3983d8fee5461ca811b": {
+    "status": "processed",
+    "chunks_count": 3,
+    "chunks_list": [
+      "chunk-047d3e9833fac19729ce4569282ccef6",
+      "chunk-95411a3d7467192927dc03dfda288b28",
+      "chunk-a367d94732179611c882172c7bdf6f14"
+    ],
+    "content_summary": "# Trae Agent\r\n\r\n[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\r\n![Alpha](https://img...",
+    "content_length": 11479,
+    "created_at": "2025-08-06T03:01:22.115474+00:00",
+    "updated_at": "2025-08-06T03:02:20.828554+00:00",
+    "file_path": "trae-agent项目说明.txt",
+    "track_id": "upload_20250806_110122_a7268037",
+    "metadata": {
+      "processing_start_time": 1754449282,
+      "processing_end_time": 1754449340
+    }
+  },
+  "doc-2cffa1c03720c0ebf3b665c1d2acb968": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-2cffa1c03720c0ebf3b665c1d2acb968"
+    ],
+    "content_summary": "Subject,Predicate,Object\r\nhttps://example.org/org/tsinghua,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,schema:Organization\r\nhttps://example.org/paper/gnn-review-2020,schema:about,N5a97b32c53bc421da6fac707d419b7b7\r\nNb06ef146e0c4479fbff8179429ec425...",
+    "content_length": 3281,
+    "created_at": "2025-08-06T07:45:29.886725+00:00",
+    "updated_at": "2025-08-06T07:46:08.216211+00:00",
+    "file_path": "example_triples.csv",
+    "track_id": "upload_20250806_154529_9fb9e90a",
+    "metadata": {
+      "processing_start_time": 1754466329,
+      "processing_end_time": 1754466368
+    }
+  }
+}

@@ -685,7 +685,7 @@ class TiktokenTokenizer(Tokenizer):
             ValueError: If the model_name is invalid.
         """
         try:
-            import tiktoken
+            import tiktoken # 使用OpenAI的tiktoken库
         except ImportError:
             raise ImportError(
                 "tiktoken is not installed. Please install it with `pip install tiktoken` or define custom `tokenizer_func`."

@@ -1,0 +1,1470 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d11" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d10" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d9" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d8" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d7" for="edge" attr.name="description" attr.type="string"/>
+<key id="d6" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="计算机学院网络空间安全学院">
+  <data key="d0">计算机学院网络空间安全学院</data>
+  <data key="d1">organization</data>
+  <data key="d2">The College of Computer Science and Network Security is the academic institution managing the exempted postgraduate recommendation process.&lt;SEP&gt;The organization responsible for the graduate recommendation process, based on academic performance and comprehensive evaluation.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379299</data>
+</node>
+<node id="南开大学">
+  <data key="d0">南开大学</data>
+  <data key="d1">organization</data>
+  <data key="d2">Nankai University is the parent institution overseeing the College of Computer Science and Network Security.&lt;SEP&gt;The university overseeing the graduate recommendation process, with policies defined in official documents.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379299</data>
+</node>
+<node id="全国大学生数学建模竞赛">
+  <data key="d0">全国大学生数学建模竞赛</data>
+  <data key="d1">event</data>
+  <data key="d2">A national academic competition where top performances can earn students加分in the recommendation process.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379299</data>
+</node>
+<node id="全国大学生电子设计竞赛">
+  <data key="d0">全国大学生电子设计竞赛</data>
+  <data key="d1">event</data>
+  <data key="d2">A national competition where achievements can contribute to a student's comprehensive evaluation.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379299</data>
+</node>
+<node id="挑战杯全国大学生课外学术科技作品竞赛">
+  <data key="d0">挑战杯全国大学生课外学术科技作品竞赛</data>
+  <data key="d1">event</data>
+  <data key="d2">A significant academic competition where winning can enhance a student's recommendation eligibility.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379299</data>
+</node>
+<node id="中国互联网+大学生创新创业大赛">
+  <data key="d0">中国互联网+大学生创新创业大赛</data>
+  <data key="d1">event</data>
+  <data key="d2">A national competition that factors into the comprehensive evaluation for graduate recommendations.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379299</data>
+</node>
+<node id="袁晓洁">
+  <data key="d0">袁晓洁</data>
+  <data key="d1">person</data>
+  <data key="d2">The leader of the graduate recommendation selection working group in the School of Computer Science and Cyber Space Security.&lt;SEP&gt;袁晓洁is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379299</data>
+</node>
+<node id="翟明睿">
+  <data key="d0">翟明睿</data>
+  <data key="d1">person</data>
+  <data key="d2">The co-leader of the graduate recommendation selection working group in the School of Computer Science and Cyber Space Security.&lt;SEP&gt;翟明睿is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379299</data>
+</node>
+<node id="刘哲理">
+  <data key="d0">刘哲理</data>
+  <data key="d1">person</data>
+  <data key="d2">A deputy leader in the graduate recommendation selection working group.&lt;SEP&gt;刘哲理is listed as a deputy leader and member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379302</data>
+</node>
+<node id="沈宝庆">
+  <data key="d0">沈宝庆</data>
+  <data key="d1">person</data>
+  <data key="d2">A deputy leader in the graduate recommendation selection working group.&lt;SEP&gt;沈宝庆is listed as a deputy leader of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379303</data>
+</node>
+<node id="徐敬东">
+  <data key="d0">徐敬东</data>
+  <data key="d1">person</data>
+  <data key="d2">The leader of the expert review小组for graduate recommendations.&lt;SEP&gt;徐敬东is listed as the leader of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379303</data>
+</node>
+<node id="推免研究生">
+  <data key="d0">推免研究生</data>
+  <data key="d1">category</data>
+  <data key="d2">A category referring to the process of recommending outstanding undergraduates for免试graduate studies.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379303</data>
+</node>
+<node id="南党发〔2021〕63号">
+  <data key="d0">南党发〔2021〕63号</data>
+  <data key="d1">organization</data>
+  <data key="d2">A policy document issued by Nankai University regarding the推荐优秀应届本科毕业生免试攻读研究生工作实施办法.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379303</data>
+</node>
+<node id="教通字【2022】38号">
+  <data key="d0">教通字【2022】38号</data>
+  <data key="d1">organization</data>
+  <data key="d2">A notification document regarding the preparation for the 2023 graduate recommendation process.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379303</data>
+</node>
+<node id="CCF-英文">
+  <data key="d0">CCF-英文</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of academic journals where publication can contribute to a student's comprehensive evaluation.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379303</data>
+</node>
+<node id="CCF-中文">
+  <data key="d0">CCF-中文</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of Chinese academic journals where publication can contribute to a student's comprehensive evaluation.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379303</data>
+</node>
+<node id="SCI检索期刊">
+  <data key="d0">SCI检索期刊</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of academic journals indexed by SCI, contributing to evaluation的加分标准.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379305</data>
+</node>
+<node id="EI检索期刊">
+  <data key="d0">EI检索期刊</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of academic journals indexed by EI, with defined加分标准for student evaluation.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379306</data>
+</node>
+<node id="OPEN ACCESS期刊">
+  <data key="d0">OPEN ACCESS期刊</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of open-access journals explicitly excluded from the加分system.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379306</data>
+</node>
+<node id="计网学院专业赛事加分标准">
+  <data key="d0">计网学院专业赛事加分标准</data>
+  <data key="d1">category</data>
+  <data key="d2">The documented criteria for assigning加分to students based on professional competition performance.</data>
+  <data key="d3">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379306</data>
+</node>
+<node id="程明明">
+  <data key="d0">程明明</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the graduate recommendation selection working group.&lt;SEP&gt;程明明is listed as a member of both the general and expert review groups for the 2023 Computer Science and Network Security College.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379306</data>
+</node>
+<node id="张建忠">
+  <data key="d0">张建忠</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the graduate recommendation selection working group.&lt;SEP&gt;张建忠is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379306</data>
+</node>
+<node id="贾春福">
+  <data key="d0">贾春福</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the graduate recommendation selection working group.&lt;SEP&gt;贾春福is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379306</data>
+</node>
+<node id="杨巨峰">
+  <data key="d0">杨巨峰</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the graduate recommendation selection working group.&lt;SEP&gt;杨巨峰is listed as a member of both the general and expert review groups for the 2023 Computer Science and Network Security College.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379306</data>
+</node>
+<node id="张莹">
+  <data key="d0">张莹</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the graduate recommendation selection working group.&lt;SEP&gt;张莹is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379308</data>
+</node>
+<node id="宫晓利">
+  <data key="d0">宫晓利</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the graduate recommendation selection working group.&lt;SEP&gt;宫晓利is listed as a member of both the general and expert review groups for the 2023 Computer Science and Network Security College.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379309</data>
+</node>
+<node id="李忠伟">
+  <data key="d0">李忠伟</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the graduate recommendation selection working group.&lt;SEP&gt;李忠伟is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379309</data>
+</node>
+<node id="苏明">
+  <data key="d0">苏明</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the graduate recommendation selection working group.&lt;SEP&gt;苏明is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379309</data>
+</node>
+<node id="王天娇">
+  <data key="d0">王天娇</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the graduate recommendation selection working group.&lt;SEP&gt;王天娇is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379309</data>
+</node>
+<node id="王怡然">
+  <data key="d0">王怡然</data>
+  <data key="d1">person</data>
+  <data key="d2">The secretary of the graduate recommendation selection working group.&lt;SEP&gt;王怡然is listed as the secretary for the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379309</data>
+</node>
+<node id="王刚">
+  <data key="d0">王刚</data>
+  <data key="d1">person</data>
+  <data key="d2">A member of the expert review小组for graduate recommendations.&lt;SEP&gt;王刚is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379309</data>
+</node>
+<node id="汪定">
+  <data key="d0">汪定</data>
+  <data key="d1">person</data>
+  <data key="d2">汪定is listed as a member of the 2023 Computer Science and Network Security College expert review group.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379309</data>
+</node>
+<node id="教育部">
+  <data key="d0">教育部</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Ministry of Education provides guidelines and documents for the exempted postgraduate recommendation process.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379311</data>
+</node>
+<node id="2023年计算机学院网络空间安全学院专家审核小组">
+  <data key="d0">2023年计算机学院网络空间安全学院专家审核小组</data>
+  <data key="d1">organization</data>
+  <data key="d2">The 2023 expert review group for the College of Computer Science and Network Security manages the exempted postgraduate recommendation process.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379311</data>
+</node>
+<node id="学院推免生遴选工作领导小组">
+  <data key="d0">学院推免生遴选工作领导小组</data>
+  <data key="d1">organization</data>
+  <data key="d2">The college's exempted postgraduate selection work leadership group is responsible for reviewing applications and making final decisions.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379311</data>
+</node>
+<node id="推免政策宣讲说明会">
+  <data key="d0">推免政策宣讲说明会</data>
+  <data key="d1">event</data>
+  <data key="d2">A policy briefing session for the exempted postgraduate recommendation process held for relevant grade students.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379311</data>
+</node>
+<node id="综合素质评价审查工作">
+  <data key="d0">综合素质评价审查工作</data>
+  <data key="d1">event</data>
+  <data key="d2">Comprehensive quality evaluation review conducted for students applying for exempted postgraduate recommendation.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379311</data>
+</node>
+<node id="2023年免试研究生推荐工作">
+  <data key="d0">2023年免试研究生推荐工作</data>
+  <data key="d1">category</data>
+  <data key="d2">The 2023 exempted postgraduate recommendation process for the College of Computer Science and Network Security.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379311</data>
+</node>
+<node id="南开大学计算机学院与网络空间安全学院优秀应届本科生免试申请攻读研究生资格申请表">
+  <data key="d0">南开大学计算机学院与网络空间安全学院优秀应届本科生免试申请攻读研究生资格申请表</data>
+  <data key="d1">category</data>
+  <data key="d2">Required application form for students applying for exempted postgraduate recommendation at Nankai University's College of Computer Science and Network Security.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379311</data>
+</node>
+<node id="2021年南开大学计算机学院与网络空间安全学院优秀应届本科生免试申请攻读研究生资格申请表">
+  <data key="d0">2021年南开大学计算机学院与网络空间安全学院优秀应届本科生免试申请攻读研究生资格申请表</data>
+  <data key="d1">category</data>
+  <data key="d2">Specific version of the application form for 2021 exempted postgraduate recommendation at Nankai University's College of Computer Science and Network Security.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379311</data>
+</node>
+<node id="南开大学推荐免试研究生复议申请表">
+  <data key="d0">南开大学推荐免试研究生复议申请表</data>
+  <data key="d1">category</data>
+  <data key="d2">Form for students to appeal decisions regarding exempted postgraduate recommendations at Nankai University.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379314</data>
+</node>
+<node id="特殊学术专长">
+  <data key="d0">特殊学术专长</data>
+  <data key="d1">category</data>
+  <data key="d2">Special academic expertise category for students in the exempted postgraduate recommendation process.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379314</data>
+</node>
+<node id="2019级学生">
+  <data key="d0">2019级学生</data>
+  <data key="d1">category</data>
+  <data key="d2">Class of 2019 students eligible for the exempted postgraduate recommendation process.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379314</data>
+</node>
+<node id="通识必修课、大类基础课、专业必修课课程累积学分绩排名">
+  <data key="d0">通识必修课、大类基础课、专业必修课课程累积学分绩排名</data>
+  <data key="d1">category</data>
+  <data key="d2">Academic ranking based on cumulative grades of required general education, foundation, and major courses.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379314</data>
+</node>
+<node id="wangyiran@nankai.edu.cn">
+  <data key="d0">wangyiran@nankai.edu.cn</data>
+  <data key="d1">organization</data>
+  <data key="d2">Email address designated for submitting exempted postgraduate recommendation application materials.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379314</data>
+</node>
+<node id="8月23日">
+  <data key="d0">8月23日</data>
+  <data key="d1">event</data>
+  <data key="d2">Date when the 2023 exempted postgraduate recommendation regulations were issued.</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379314</data>
+</node>
+<node id="学院公示">
+  <data key="d0">学院公示</data>
+  <data key="d3">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d2">Materials for students with special academic expertise are publicly reviewed by the college.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d5">1754379325</data>
+</node>
+<node id="Trae Agent">
+  <data key="d0">Trae Agent</data>
+  <data key="d1">organization</data>
+  <data key="d2">Trae Agent is an LLM-based agent for general-purpose software engineering tasks, offering a CLI interface for executing workflows with natural language instructions.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449311</data>
+</node>
+<node id="Bytedance">
+  <data key="d0">Bytedance</data>
+  <data key="d1">organization</data>
+  <data key="d2">Bytedance is the organization hosting the Trae Agent project on GitHub.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449311</data>
+</node>
+<node id="Discord">
+  <data key="d0">Discord</data>
+  <data key="d1">organization</data>
+  <data key="d2">Discord is a platform where users can join a community related to Trae Agent.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449311</data>
+</node>
+<node id="GitHub">
+  <data key="d0">GitHub</data>
+  <data key="d1">organization</data>
+  <data key="d2">GitHub is the platform where the Trae Agent project is hosted and developed.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449311</data>
+</node>
+<node id="OpenAI">
+  <data key="d0">OpenAI</data>
+  <data key="d1">organization</data>
+  <data key="d2">Company providing GPT-4o and GPT-4o-mini models through OpenRouter.&lt;SEP&gt;OpenAI is mentioned as a provider for API keys in the requirements section.&lt;SEP&gt;OpenAI is one of the supported LLM providers for Trae Agent.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14&lt;SEP&gt;chunk-047d3e9833fac19729ce4569282ccef6&lt;SEP&gt;chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449311</data>
+</node>
+<node id="Anthropic">
+  <data key="d0">Anthropic</data>
+  <data key="d1">organization</data>
+  <data key="d2">An AI provider offering models like claude-sonnet-4-20250514 for use with trae-cli.&lt;SEP&gt;Anthropic is one of the supported LLM providers for Trae Agent.&lt;SEP&gt;Anthropic is referenced as the creator of the anthropic-quickstart project, which served as a reference for the current project.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14&lt;SEP&gt;chunk-047d3e9833fac19729ce4569282ccef6&lt;SEP&gt;chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449311</data>
+</node>
+<node id="Doubao">
+  <data key="d0">Doubao</data>
+  <data key="d1">organization</data>
+  <data key="d2">An AI provider that can be used with trae-cli for task execution.&lt;SEP&gt;Doubao is one of the supported LLM providers for Trae Agent.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6&lt;SEP&gt;chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449311</data>
+</node>
+<node id="Azure">
+  <data key="d0">Azure</data>
+  <data key="d1">organization</data>
+  <data key="d2">Azure is one of the supported LLM providers for Trae Agent.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449311</data>
+</node>
+<node id="OpenRouter">
+  <data key="d0">OpenRouter</data>
+  <data key="d1">organization</data>
+  <data key="d2">A platform providing access to multiple AI models, including those from OpenAI, Anthropic, and Google.&lt;SEP&gt;OpenRouter is mentioned as a provider for API keys in the requirements section.&lt;SEP&gt;OpenRouter is one of the supported LLM providers for Trae Agent.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14&lt;SEP&gt;chunk-047d3e9833fac19729ce4569282ccef6&lt;SEP&gt;chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449314</data>
+</node>
+<node id="Ollama">
+  <data key="d0">Ollama</data>
+  <data key="d1">organization</data>
+  <data key="d2">An AI provider offering models like qwen3 for use with trae-cli.&lt;SEP&gt;Ollama is one of the supported LLM providers for Trae Agent.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6&lt;SEP&gt;chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449315</data>
+</node>
+<node id="Google Gemini">
+  <data key="d0">Google Gemini</data>
+  <data key="d1">organization</data>
+  <data key="d2">An AI provider offering models like gemini-2.5-flash for use with trae-cli.&lt;SEP&gt;Google Gemini is one of the supported LLM providers for Trae Agent.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6&lt;SEP&gt;chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449315</data>
+</node>
+<node id="MIT License">
+  <data key="d0">MIT License</data>
+  <data key="d1">organization</data>
+  <data key="d2">The MIT License is the licensing agreement under which the project is distributed.&lt;SEP&gt;The MIT License is the open-source license under which Trae Agent is released.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14&lt;SEP&gt;chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449315</data>
+</node>
+<node id="Lakeview">
+  <data key="d0">Lakeview</data>
+  <data key="d1">category</data>
+  <data key="d2">Lakeview is a feature of Trae Agent that provides concise summarization for agent steps.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449315</data>
+</node>
+<node id="uv">
+  <data key="d0">uv</data>
+  <data key="d1">organization</data>
+  <data key="d2">uv is a tool recommended for setting up the Trae Agent project environment.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449315</data>
+</node>
+<node id="python-dotenv">
+  <data key="d0">python-dotenv</data>
+  <data key="d1">organization</data>
+  <data key="d2">python-dotenv is a Python package recommended for managing environment variables in Trae Agent.</data>
+  <data key="d3">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449315</data>
+</node>
+<node id="trae-cli">
+  <data key="d0">trae-cli</data>
+  <data key="d1">organization</data>
+  <data key="d2">A command-line interface tool for executing tasks using various AI providers.&lt;SEP&gt;trae-cli is the command-line interface for interacting with Trae Agent.&lt;SEP&gt;trae-cli is the command-line interface tool mentioned for running tasks and checking configurations.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14&lt;SEP&gt;chunk-047d3e9833fac19729ce4569282ccef6&lt;SEP&gt;chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449315</data>
+</node>
+<node id="GPT-4o">
+  <data key="d0">GPT-4o</data>
+  <data key="d1">category</data>
+  <data key="d2">A model provided by OpenAI via OpenRouter for task execution.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449317</data>
+</node>
+<node id="Claude-3-5-sonnet">
+  <data key="d0">Claude-3-5-sonnet</data>
+  <data key="d1">category</data>
+  <data key="d2">A model provided by Anthropic via OpenRouter for task execution.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449317</data>
+</node>
+<node id="Gemini-pro">
+  <data key="d0">Gemini-pro</data>
+  <data key="d1">category</data>
+  <data key="d2">A model provided by Google via OpenRouter for task execution.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449317</data>
+</node>
+<node id="Llama-3.1-405b">
+  <data key="d0">Llama-3.1-405b</data>
+  <data key="d1">category</data>
+  <data key="d2">An open-source model provided by Meta via OpenRouter.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449317</data>
+</node>
+<node id="GPT-4o-mini">
+  <data key="d0">GPT-4o-mini</data>
+  <data key="d1">category</data>
+  <data key="d2">A cost-effective model provided by OpenAI via OpenRouter.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449317</data>
+</node>
+<node id="Meta">
+  <data key="d0">Meta</data>
+  <data key="d1">organization</data>
+  <data key="d2">Parent company providing the Llama-3.1-405b model through OpenRouter.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449317</data>
+</node>
+<node id="Interactive Mode">
+  <data key="d0">Interactive Mode</data>
+  <data key="d1">event</data>
+  <data key="d2">A feature of trae-cli allowing direct interaction with the AI agent.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449317</data>
+</node>
+<node id="Configuration">
+  <data key="d0">Configuration</data>
+  <data key="d1">category</data>
+  <data key="d2">Custom settings for trae-cli including provider selection and model choices.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449317</data>
+</node>
+<node id="Environment Variables">
+  <data key="d0">Environment Variables</data>
+  <data key="d1">category</data>
+  <data key="d2">API keys and settings configured in the execution environment for trae-cli.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449320</data>
+</node>
+<node id="Tools">
+  <data key="d0">Tools</data>
+  <data key="d1">category</data>
+  <data key="d2">Capabilities provided by Trae Agent for file editing, bash execution, etc.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449320</data>
+</node>
+<node id="Trajectory Recording">
+  <data key="d0">Trajectory Recording</data>
+  <data key="d1">category</data>
+  <data key="d2">Debugging feature that records detailed execution logs in trae-cli.</data>
+  <data key="d3">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449320</data>
+</node>
+<node id="Google">
+  <data key="d0">Google</data>
+  <data key="d1">organization</data>
+  <data key="d2">Google is mentioned as a provider for API keys in the requirements section.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449320</data>
+</node>
+<node id="TRAJECTORY_RECORDING.md">
+  <data key="d0">TRAJECTORY_RECORDING.md</data>
+  <data key="d1">category</data>
+  <data key="d2">TRAJECTORY_RECORDING.md is documented as a resource for detailed information about trajectory recordings.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449320</data>
+</node>
+<node id="CONTRIBUTING.md">
+  <data key="d0">CONTRIBUTING.md</data>
+  <data key="d1">category</data>
+  <data key="d2">CONTRIBUTING.md contains the detailed contribution guidelines for the project.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449320</data>
+</node>
+<node id="Python 3.12+">
+  <data key="d0">Python 3.12+</data>
+  <data key="d1">category</data>
+  <data key="d2">Python 3.12+ is listed as a requirement for the project.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449320</data>
+</node>
+<node id="PEP 8">
+  <data key="d0">PEP 8</data>
+  <data key="d1">category</data>
+  <data key="d2">PEP 8 is referenced as the style guideline to follow for development.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449320</data>
+</node>
+<node id="make">
+  <data key="d0">make</data>
+  <data key="d1">category</data>
+  <data key="d2">make is referenced as a build tool used for development commands like 'install-dev' and 'pre-commit'.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449323</data>
+</node>
+<node id="git">
+  <data key="d0">git</data>
+  <data key="d1">category</data>
+  <data key="d2">git is mentioned as the version control system used for branch creation and committing changes.</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449323</data>
+</node>
+<node id="anthropic-quickstart">
+  <data key="d0">anthropic-quickstart</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d2">Anthropic created the anthropic-quickstart project, which was used as a reference.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449335</data>
+</node>
+<node id="API key">
+  <data key="d0">API key</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d2">OpenAI provides API keys necessary for using OpenAI models in the project.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449336</data>
+</node>
+<node id="Development Guidelines">
+  <data key="d0">Development Guidelines</data>
+  <data key="d3">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d2">PEP 8 style guidelines are part of the project's development guidelines.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">trae-agent项目说明.txt</data>
+  <data key="d5">1754449338</data>
+</node>
+<node id="Tsinghua University">
+  <data key="d0">Tsinghua University</data>
+  <data key="d1">organization</data>
+  <data key="d2">Tsinghua University is an academic institution affiliated with author Wang Li.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466355</data>
+</node>
+<node id="Stanford University">
+  <data key="d0">Stanford University</data>
+  <data key="d1">organization</data>
+  <data key="d2">Stanford University is an academic institution affiliated with author John Smith.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466355</data>
+</node>
+<node id="Wang Li">
+  <data key="d0">Wang Li</data>
+  <data key="d1">person</data>
+  <data key="d2">Wang Li is an author affiliated with Tsinghua University and co-author of 'Graph Neural Networks: A Review'.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466355</data>
+</node>
+<node id="John Smith">
+  <data key="d0">John Smith</data>
+  <data key="d1">person</data>
+  <data key="d2">John Smith is an author affiliated with Stanford University and co-author of 'Graph Neural Networks: A Review'.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466355</data>
+</node>
+<node id="Graph Neural Networks: A Review">
+  <data key="d0">Graph Neural Networks: A Review</data>
+  <data key="d1">event</data>
+  <data key="d2">A scholarly article published on June 1, 2020, authored by Wang Li and John Smith, focusing on Graph Neural Networks.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466355</data>
+</node>
+<node id="Graph Neural Networks">
+  <data key="d0">Graph Neural Networks</data>
+  <data key="d1">category</data>
+  <data key="d2">A field of study related to graph-based neural network models.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466355</data>
+</node>
+<node id="Artificial Intelligence">
+  <data key="d0">Artificial Intelligence</data>
+  <data key="d1">category</data>
+  <data key="d2">A broad field of study encompassing AI technologies, including deep learning.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466355</data>
+</node>
+<node id="deep learning">
+  <data key="d0">deep learning</data>
+  <data key="d1">category</data>
+  <data key="d2">A subfield of machine learning involving neural networks.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466355</data>
+</node>
+<node id="representation learning">
+  <data key="d0">representation learning</data>
+  <data key="d1">category</data>
+  <data key="d2">A machine learning technique focused on learning representations of data.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466358</data>
+</node>
+<node id="Applications of Graph Neural Networks in Biology">
+  <data key="d0">Applications of Graph Neural Networks in Biology</data>
+  <data key="d1">event</data>
+  <data key="d2">A scholarly article cited by 'Graph Neural Networks: A Review'.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466358</data>
+</node>
+<node id="https://arxiv.org/abs/2002.05709">
+  <data key="d0">https://arxiv.org/abs/2002.05709</data>
+  <data key="d1">event</data>
+  <data key="d2">The URL for the paper 'Graph Neural Networks: A Review' on arXiv.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466358</data>
+</node>
+<node id="N5a97b32c53bc421da6fac707d419b7b7">
+  <data key="d0">N5a97b32c53bc421da6fac707d419b7b7</data>
+  <data key="d1">category</data>
+  <data key="d2">An entity representing the concept of 'graph neural networks' in the RDF data.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466358</data>
+</node>
+<node id="Nb06ef146e0c4479fbff8179429ec4256">
+  <data key="d0">Nb06ef146e0c4479fbff8179429ec4256</data>
+  <data key="d1">category</data>
+  <data key="d2">An entity representing the concept of 'representation learning' in the RDF data.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466358</data>
+</node>
+<node id="N5c3b71d117574300a39a59a9b8c30fce">
+  <data key="d0">N5c3b71d117574300a39a59a9b8c30fce</data>
+  <data key="d1">category</data>
+  <data key="d2">An entity representing the concept of 'deep learning' in the RDF data.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466358</data>
+</node>
+<node id="https://example.org/field/gnn">
+  <data key="d0">https://example.org/field/gnn</data>
+  <data key="d1">category</data>
+  <data key="d2">The RDF resource identifier for the field of Graph Neural Networks.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466358</data>
+</node>
+<node id="https://example.org/field/ai">
+  <data key="d0">https://example.org/field/ai</data>
+  <data key="d1">category</data>
+  <data key="d2">The RDF resource identifier for the field of Artificial Intelligence.</data>
+  <data key="d3">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d4">example_triples.csv</data>
+  <data key="d5">1754466358</data>
+</node>
+<edge source="计算机学院网络空间安全学院" target="南开大学">
+  <data key="d6">18.0</data>
+  <data key="d7">The College of Computer Science and Network Security is part of Nankai University.&lt;SEP&gt;The college operates under the policies and guidelines set by Nankai University for graduate recommendations.</data>
+  <data key="d8">academic structure,institutional hierarchy,policy adherence,subsidiary</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3&lt;SEP&gt;chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379314</data>
+</edge>
+<edge source="计算机学院网络空间安全学院" target="袁晓洁">
+  <data key="d6">14.0</data>
+  <data key="d7">Yuan Xiaojie leads the graduate recommendation process in the college.&lt;SEP&gt;Yuan Xiaojie leads the graduate recommendation selection working group within the college.</data>
+  <data key="d8">academic administration,academic leadership,administrative role,leadership</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379317</data>
+</edge>
+<edge source="计算机学院网络空间安全学院" target="推免研究生">
+  <data key="d6">9.0</data>
+  <data key="d7">The college manages the process of recommending students for免试graduate studies.</data>
+  <data key="d8">academic process,student selection</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379317</data>
+</edge>
+<edge source="计算机学院网络空间安全学院" target="程明明">
+  <data key="d6">6.0</data>
+  <data key="d7">Cheng Mingming is a member of the college's graduate recommendation working group.</data>
+  <data key="d8">academic review,committee membership</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379319</data>
+</edge>
+<edge source="计算机学院网络空间安全学院" target="张建忠">
+  <data key="d6">6.0</data>
+  <data key="d7">Zhang Jianzhong participates in the college's graduate recommendation selection process.</data>
+  <data key="d8">faculty involvement,student evaluation</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379320</data>
+</edge>
+<edge source="计算机学院网络空间安全学院" target="教育部">
+  <data key="d6">8.0</data>
+  <data key="d7">The College of Computer Science and Network Security follows guidelines from the Ministry of Education for the exempted postgraduate recommendation process.</data>
+  <data key="d8">academic governance,policy compliance</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379321</data>
+</edge>
+<edge source="南开大学" target="南党发〔2021〕63号">
+  <data key="d6">8.0</data>
+  <data key="d7">The document represents the official policy of Nankai University regarding graduate recommendations.</data>
+  <data key="d8">institutional regulations,policy document</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379317</data>
+</edge>
+<edge source="南开大学" target="教通字【2022】38号">
+  <data key="d6">8.0</data>
+  <data key="d7">The notification is issued by the university regarding the specific year's graduate recommendation preparation.</data>
+  <data key="d8">academic process,administrative notice</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379318</data>
+</edge>
+<edge source="全国大学生数学建模竞赛" target="推免研究生">
+  <data key="d6">6.0</data>
+  <data key="d7">Achievements in this competition can enhance a student's eligibility for graduate recommendation.</data>
+  <data key="d8">academic merit,competition impact</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379318</data>
+</edge>
+<edge source="全国大学生电子设计竞赛" target="推免研究生">
+  <data key="d6">6.0</data>
+  <data key="d7">Performance in this competition contributes to the comprehensive evaluation for graduate recommendations.</data>
+  <data key="d8">academic achievement,evaluation criteria</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379319</data>
+</edge>
+<edge source="挑战杯全国大学生课外学术科技作品竞赛" target="推免研究生">
+  <data key="d6">6.0</data>
+  <data key="d7">Success in this competition is a factor in the graduate recommendation process.</data>
+  <data key="d8">academic excellence,competition benefits</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379319</data>
+</edge>
+<edge source="中国互联网+大学生创新创业大赛" target="推免研究生">
+  <data key="d6">6.0</data>
+  <data key="d7">Participation and success in this大赛influence the graduate recommendation evaluation.</data>
+  <data key="d8">academic recognition,innovation</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379320</data>
+</edge>
+<edge source="袁晓洁" target="2023年计算机学院网络空间安全学院专家审核小组">
+  <data key="d6">8.0</data>
+  <data key="d7">袁晓洁is a member of the 2023 expert review group for the College of Computer Science and Network Security.</data>
+  <data key="d8">academic review,membership</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379320</data>
+</edge>
+<edge source="徐敬东" target="2023年计算机学院网络空间安全学院专家审核小组">
+  <data key="d6">9.0</data>
+  <data key="d7">徐敬东is the leader of the 2023 expert review group for the College of Computer Science and Network Security.</data>
+  <data key="d8">academic review,leadership</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379321</data>
+</edge>
+<edge source="推免研究生" target="CCF-英文">
+  <data key="d6">6.0</data>
+  <data key="d7">Publication in CCF-英文journals contributes to the comprehensive evaluation for graduate recommendations.</data>
+  <data key="d8">academic publication,evaluation criteria</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379322</data>
+</edge>
+<edge source="推免研究生" target="CCF-中文">
+  <data key="d6">6.0</data>
+  <data key="d7">Publication in CCF-中文journals is part of the evaluation criteria for graduate recommendations.</data>
+  <data key="d8">scholarly achievement,selection process</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379323</data>
+</edge>
+<edge source="推免研究生" target="SCI检索期刊">
+  <data key="d6">7.0</data>
+  <data key="d7">Publication in SCI journals yields加分in the graduate recommendation evaluation.</data>
+  <data key="d8">academic assessment,research output</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379325</data>
+</edge>
+<edge source="推免研究生" target="EI检索期刊">
+  <data key="d6">6.0</data>
+  <data key="d7">Publication in EI journals provides specified加分for graduate recommendation eligibility.</data>
+  <data key="d8">ranking factor,scholarly contribution</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379327</data>
+</edge>
+<edge source="推免研究生" target="计网学院专业赛事加分标准">
+  <data key="d6">7.0</data>
+  <data key="d7">The document specifies how professional competition performance factors into graduate recommendation evaluations.</data>
+  <data key="d8">competitive achievement,evaluation framework</data>
+  <data key="d9">chunk-cfac3998afa8ac36f23c14ef32bc776d</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379327</data>
+</edge>
+<edge source="王怡然" target="wangyiran@nankai.edu.cn">
+  <data key="d6">8.0</data>
+  <data key="d7">王怡然is associated with the official email for submitting postgraduate recommendation applications.</data>
+  <data key="d8">administrative process,official communication</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379323</data>
+</edge>
+<edge source="2023年计算机学院网络空间安全学院专家审核小组" target="学院推免生遴选工作领导小组">
+  <data key="d6">9.0</data>
+  <data key="d7">The expert review group works with the college's selection work leadership group to manage the exempted postgraduate recommendation process.</data>
+  <data key="d8">academic evaluation,collaboration</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379323</data>
+</edge>
+<edge source="学院推免生遴选工作领导小组" target="综合素质评价审查工作">
+  <data key="d6">8.0</data>
+  <data key="d7">The comprehensive quality evaluation review is conducted by the college's selection work leadership group.</data>
+  <data key="d8">academic evaluation,assessment process</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379325</data>
+</edge>
+<edge source="学院推免生遴选工作领导小组" target="南开大学推荐免试研究生复议申请表">
+  <data key="d6">7.0</data>
+  <data key="d7">The appeals form is submitted to the college's selection work leadership group for reconsideration.</data>
+  <data key="d8">academic fairness,dispute resolution</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379326</data>
+</edge>
+<edge source="推免政策宣讲说明会" target="2023年免试研究生推荐工作">
+  <data key="d6">7.0</data>
+  <data key="d7">The policy briefing session is part of the 2023 exempted postgraduate recommendation process.</data>
+  <data key="d8">academic procedure,information dissemination</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379323</data>
+</edge>
+<edge source="特殊学术专长" target="学院公示">
+  <data key="d6">6.0</data>
+  <data key="d7">Materials for students with special academic expertise are publicly reviewed by the college.</data>
+  <data key="d8">academic specialization,transparency</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379325</data>
+</edge>
+<edge source="2019级学生" target="通识必修课、大类基础课、专业必修课课程累积学分绩排名">
+  <data key="d6">7.0</data>
+  <data key="d7">Class of 2019 students are evaluated based on their cumulative course grade rankings.</data>
+  <data key="d8">academic assessment,student evaluation</data>
+  <data key="d9">chunk-e3acb8e42b770bfbf34e0163f1d903e3</data>
+  <data key="d10">2023年计算机学院 网络空间安全学院免试研究生推荐工作细则.docx</data>
+  <data key="d11">1754379325</data>
+</edge>
+<edge source="Trae Agent" target="Bytedance">
+  <data key="d6">9.0</data>
+  <data key="d7">Trae Agent is hosted and developed by Bytedance on GitHub.</data>
+  <data key="d8">development,hosting</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449324</data>
+</edge>
+<edge source="Trae Agent" target="Discord">
+  <data key="d6">7.0</data>
+  <data key="d7">Trae Agent has a community on Discord for user interaction and support.</data>
+  <data key="d8">community,support</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449324</data>
+</edge>
+<edge source="Trae Agent" target="GitHub">
+  <data key="d6">8.0</data>
+  <data key="d7">Trae Agent's project repository is hosted on GitHub.</data>
+  <data key="d8">development,repository</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449325</data>
+</edge>
+<edge source="Trae Agent" target="OpenAI">
+  <data key="d6">7.0</data>
+  <data key="d7">Trae Agent supports using OpenAI's LLM services.</data>
+  <data key="d8">LLM provider,integration</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449325</data>
+</edge>
+<edge source="Trae Agent" target="Anthropic">
+  <data key="d6">7.0</data>
+  <data key="d7">Trae Agent supports using Anthropic's LLM services.</data>
+  <data key="d8">LLM provider,integration</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449325</data>
+</edge>
+<edge source="Trae Agent" target="Doubao">
+  <data key="d6">7.0</data>
+  <data key="d7">Trae Agent supports using Doubao's LLM services.</data>
+  <data key="d8">LLM provider,integration</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449326</data>
+</edge>
+<edge source="Trae Agent" target="Azure">
+  <data key="d6">7.0</data>
+  <data key="d7">Trae Agent supports using Azure's LLM services.</data>
+  <data key="d8">LLM provider,integration</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449326</data>
+</edge>
+<edge source="Trae Agent" target="OpenRouter">
+  <data key="d6">7.0</data>
+  <data key="d7">Trae Agent supports using OpenRouter's LLM services.</data>
+  <data key="d8">LLM provider,integration</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449327</data>
+</edge>
+<edge source="Trae Agent" target="Ollama">
+  <data key="d6">7.0</data>
+  <data key="d7">Trae Agent supports using Ollama's LLM services.</data>
+  <data key="d8">LLM provider,integration</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449327</data>
+</edge>
+<edge source="Trae Agent" target="Google Gemini">
+  <data key="d6">7.0</data>
+  <data key="d7">Trae Agent supports using Google Gemini's LLM services.</data>
+  <data key="d8">LLM provider,integration</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449328</data>
+</edge>
+<edge source="Trae Agent" target="MIT License">
+  <data key="d6">8.0</data>
+  <data key="d7">Trae Agent is released under the MIT License.</data>
+  <data key="d8">licensing,open-source</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449329</data>
+</edge>
+<edge source="Trae Agent" target="Lakeview">
+  <data key="d6">7.0</data>
+  <data key="d7">Lakeview is a feature provided by Trae Agent for step summarization.</data>
+  <data key="d8">feature,functionality</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449330</data>
+</edge>
+<edge source="Trae Agent" target="uv">
+  <data key="d6">6.0</data>
+  <data key="d7">Trae Agent recommends using uv for project setup and environment management.</data>
+  <data key="d8">setup,tool integration</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449330</data>
+</edge>
+<edge source="Trae Agent" target="python-dotenv">
+  <data key="d6">7.0</data>
+  <data key="d7">Trae Agent recommends python-dotenv for secure API key management.</data>
+  <data key="d8">configuration,security</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449332</data>
+</edge>
+<edge source="Trae Agent" target="trae-cli">
+  <data key="d6">9.0</data>
+  <data key="d7">trae-cli is the primary interface for users to interact with Trae Agent.</data>
+  <data key="d8">accessibility,user interface</data>
+  <data key="d9">chunk-047d3e9833fac19729ce4569282ccef6</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449333</data>
+</edge>
+<edge source="OpenAI" target="GPT-4o">
+  <data key="d6">7.0</data>
+  <data key="d7">OpenAI developed the GPT-4o model distributed through OpenRouter.</data>
+  <data key="d8">distribution,model development</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449332</data>
+</edge>
+<edge source="OpenAI" target="API key">
+  <data key="d6">7.0</data>
+  <data key="d7">OpenAI provides API keys necessary for using OpenAI models in the project.</data>
+  <data key="d8">API integration,service provider</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449336</data>
+</edge>
+<edge source="OpenAI" target="GPT-4o-mini">
+  <data key="d6">7.0</data>
+  <data key="d7">OpenAI developed the GPT-4o-mini model distributed through OpenRouter.</data>
+  <data key="d8">distribution,model development</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449337</data>
+</edge>
+<edge source="OpenAI" target="trae-cli">
+  <data key="d6">8.0</data>
+  <data key="d7">trae-cli requires OpenAI API keys to function with OpenAI models.</data>
+  <data key="d8">API integration,tool dependency</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449339</data>
+</edge>
+<edge source="Anthropic" target="trae-cli">
+  <data key="d6">16.0</data>
+  <data key="d7">trae-cli can execute tasks using Anthropic's AI models.&lt;SEP&gt;trae-cli requires Anthropic API keys to function with Anthropic models.</data>
+  <data key="d8">AI integration,API integration,task execution,tool dependency</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14&lt;SEP&gt;chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449328</data>
+</edge>
+<edge source="Anthropic" target="anthropic-quickstart">
+  <data key="d6">8.0</data>
+  <data key="d7">Anthropic created the anthropic-quickstart project, which was used as a reference.</data>
+  <data key="d8">project inspiration,reference</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449335</data>
+</edge>
+<edge source="Doubao" target="trae-cli">
+  <data key="d6">8.0</data>
+  <data key="d7">trae-cli can execute tasks using Doubao's AI models.</data>
+  <data key="d8">AI integration,task execution</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449327</data>
+</edge>
+<edge source="OpenRouter" target="trae-cli">
+  <data key="d6">16.0</data>
+  <data key="d7">trae-cli can execute tasks using models provided by OpenRouter.&lt;SEP&gt;trae-cli requires OpenRouter API keys to function with OpenRouter models.</data>
+  <data key="d8">AI integration,API integration,task execution,tool dependency</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14&lt;SEP&gt;chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449330</data>
+</edge>
+<edge source="OpenRouter" target="GPT-4o">
+  <data key="d6">9.0</data>
+  <data key="d7">OpenRouter provides access to the GPT-4o model from OpenAI.</data>
+  <data key="d8">model distribution,platform service</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449331</data>
+</edge>
+<edge source="OpenRouter" target="Claude-3-5-sonnet">
+  <data key="d6">9.0</data>
+  <data key="d7">OpenRouter provides access to the Claude-3-5-sonnet model from Anthropic.</data>
+  <data key="d8">model distribution,platform service</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449332</data>
+</edge>
+<edge source="OpenRouter" target="Gemini-pro">
+  <data key="d6">9.0</data>
+  <data key="d7">OpenRouter provides access to the Gemini-pro model from Google.</data>
+  <data key="d8">model distribution,platform service</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449333</data>
+</edge>
+<edge source="OpenRouter" target="Llama-3.1-405b">
+  <data key="d6">9.0</data>
+  <data key="d7">OpenRouter provides access to the Llama-3.1-405b model from Meta.</data>
+  <data key="d8">model distribution,platform service</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449334</data>
+</edge>
+<edge source="OpenRouter" target="GPT-4o-mini">
+  <data key="d6">9.0</data>
+  <data key="d7">OpenRouter provides access to the GPT-4o-mini model from OpenAI.</data>
+  <data key="d8">model distribution,platform service</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449335</data>
+</edge>
+<edge source="OpenRouter" target="API key">
+  <data key="d6">7.0</data>
+  <data key="d7">OpenRouter provides API keys necessary for using OpenRouter models in the project.</data>
+  <data key="d8">API integration,service provider</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449340</data>
+</edge>
+<edge source="Ollama" target="trae-cli">
+  <data key="d6">8.0</data>
+  <data key="d7">trae-cli can execute tasks using Ollama's AI models.</data>
+  <data key="d8">AI integration,task execution</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449331</data>
+</edge>
+<edge source="Google Gemini" target="trae-cli">
+  <data key="d6">8.0</data>
+  <data key="d7">trae-cli can execute tasks using Google Gemini's AI models.</data>
+  <data key="d8">AI integration,task execution</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449329</data>
+</edge>
+<edge source="trae-cli" target="Interactive Mode">
+  <data key="d6">8.0</data>
+  <data key="d7">trae-cli provides an interactive session feature for task execution.</data>
+  <data key="d8">functionality,user interface</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449334</data>
+</edge>
+<edge source="trae-cli" target="Configuration">
+  <data key="d6">6.0</data>
+  <data key="d7">trae-cli can be customized through JSON configuration files.</data>
+  <data key="d8">customization,settings management</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449335</data>
+</edge>
+<edge source="trae-cli" target="Environment Variables">
+  <data key="d6">7.0</data>
+  <data key="d7">trae-cli uses environment variables for API key configuration.</data>
+  <data key="d8">security,system integration</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449336</data>
+</edge>
+<edge source="trae-cli" target="Tools">
+  <data key="d6">8.0</data>
+  <data key="d7">trae-cli provides various tools for code editing and execution.</data>
+  <data key="d8">capabilities,functionality</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449337</data>
+</edge>
+<edge source="trae-cli" target="Trajectory Recording">
+  <data key="d6">9.0</data>
+  <data key="d7">trae-cli automatically records execution details for debugging.</data>
+  <data key="d8">debugging,logging</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449338</data>
+</edge>
+<edge source="trae-cli" target="Google">
+  <data key="d6">8.0</data>
+  <data key="d7">trae-cli requires Google API keys to function with Google Gemini models.</data>
+  <data key="d8">API integration,tool dependency</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449339</data>
+</edge>
+<edge source="Llama-3.1-405b" target="Meta">
+  <data key="d6">7.0</data>
+  <data key="d7">Meta developed the Llama-3.1-405b model distributed through OpenRouter.</data>
+  <data key="d8">distribution,model development</data>
+  <data key="d9">chunk-95411a3d7467192927dc03dfda288b28</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449335</data>
+</edge>
+<edge source="Google" target="API key">
+  <data key="d6">7.0</data>
+  <data key="d7">Google provides API keys necessary for using Google Gemini models in the project.</data>
+  <data key="d8">API integration,service provider</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449339</data>
+</edge>
+<edge source="CONTRIBUTING.md" target="git">
+  <data key="d6">7.0</data>
+  <data key="d7">git is used to follow the contribution workflow outlined in CONTRIBUTING.md.</data>
+  <data key="d8">version control,workflow management</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449337</data>
+</edge>
+<edge source="PEP 8" target="Development Guidelines">
+  <data key="d6">9.0</data>
+  <data key="d7">PEP 8 style guidelines are part of the project's development guidelines.</data>
+  <data key="d8">best practices,coding standards</data>
+  <data key="d9">chunk-a367d94732179611c882172c7bdf6f14</data>
+  <data key="d10">trae-agent项目说明.txt</data>
+  <data key="d11">1754449338</data>
+</edge>
+<edge source="Tsinghua University" target="Wang Li">
+  <data key="d6">9.0</data>
+  <data key="d7">Wang Li is affiliated with Tsinghua University.</data>
+  <data key="d8">academic affiliation</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466361</data>
+</edge>
+<edge source="Stanford University" target="John Smith">
+  <data key="d6">9.0</data>
+  <data key="d7">John Smith is affiliated with Stanford University.</data>
+  <data key="d8">academic affiliation</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466362</data>
+</edge>
+<edge source="Wang Li" target="Graph Neural Networks: A Review">
+  <data key="d6">10.0</data>
+  <data key="d7">Wang Li is a co-author of 'Graph Neural Networks: A Review'.</data>
+  <data key="d8">authorship</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466362</data>
+</edge>
+<edge source="John Smith" target="Graph Neural Networks: A Review">
+  <data key="d6">10.0</data>
+  <data key="d7">John Smith is a co-author of 'Graph Neural Networks: A Review'.</data>
+  <data key="d8">authorship</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466363</data>
+</edge>
+<edge source="Graph Neural Networks: A Review" target="Graph Neural Networks">
+  <data key="d6">8.0</data>
+  <data key="d7">The paper is about Graph Neural Networks.</data>
+  <data key="d8">research focus</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466363</data>
+</edge>
+<edge source="Graph Neural Networks: A Review" target="Artificial Intelligence">
+  <data key="d6">7.0</data>
+  <data key="d7">The paper is related to the field of Artificial Intelligence.</data>
+  <data key="d8">research field</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466364</data>
+</edge>
+<edge source="Graph Neural Networks: A Review" target="deep learning">
+  <data key="d6">6.0</data>
+  <data key="d7">The paper mentions deep learning as a topic.</data>
+  <data key="d8">research subtopic</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466364</data>
+</edge>
+<edge source="Graph Neural Networks: A Review" target="representation learning">
+  <data key="d6">6.0</data>
+  <data key="d7">The paper discusses representation learning.</data>
+  <data key="d8">research subtopic</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466365</data>
+</edge>
+<edge source="Graph Neural Networks: A Review" target="Applications of Graph Neural Networks in Biology">
+  <data key="d6">8.0</data>
+  <data key="d7">The paper cites 'Applications of Graph Neural Networks in Biology'.</data>
+  <data key="d8">citation</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466366</data>
+</edge>
+<edge source="Graph Neural Networks: A Review" target="https://arxiv.org/abs/2002.05709">
+  <data key="d6">8.0</data>
+  <data key="d7">The paper 'Graph Neural Networks: A Review' is available at this arXiv URL.</data>
+  <data key="d8">publication link</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466366</data>
+</edge>
+<edge source="Graph Neural Networks: A Review" target="N5a97b32c53bc421da6fac707d419b7b7">
+  <data key="d6">7.0</data>
+  <data key="d7">The paper is about the concept represented by the entity N5a97b32c53bc421da6fac707d419b7b7 (graph neural networks).</data>
+  <data key="d8">topic coverage</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466367</data>
+</edge>
+<edge source="Graph Neural Networks: A Review" target="Nb06ef146e0c4479fbff8179429ec4256">
+  <data key="d6">7.0</data>
+  <data key="d7">The paper discusses the concept represented by the entity Nb06ef146e0c4479fbff8179429ec4256 (representation learning).</data>
+  <data key="d8">topic coverage</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466367</data>
+</edge>
+<edge source="Graph Neural Networks: A Review" target="N5c3b71d117574300a39a59a9b8c30fce">
+  <data key="d6">6.0</data>
+  <data key="d7">The paper mentions the concept represented by the entity N5c3b71d117574300a39a59a9b8c30fce (deep learning).</data>
+  <data key="d8">topic coverage</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466367</data>
+</edge>
+<edge source="Graph Neural Networks" target="https://example.org/field/gnn">
+  <data key="d6">8.0</data>
+  <data key="d7">The concept of Graph Neural Networks is formally represented by this RDF resource.</data>
+  <data key="d8">formal representation</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466364</data>
+</edge>
+<edge source="Artificial Intelligence" target="https://example.org/field/ai">
+  <data key="d6">8.0</data>
+  <data key="d7">The concept of Artificial Intelligence is formally represented by this RDF resource.</data>
+  <data key="d8">formal representation</data>
+  <data key="d9">chunk-2cffa1c03720c0ebf3b665c1d2acb968</data>
+  <data key="d10">example_triples.csv</data>
+  <data key="d11">1754466365</data>
+</edge>
+</graph></graphml>

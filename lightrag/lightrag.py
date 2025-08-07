@@ -208,7 +208,7 @@ class LightRAG:
     If both are None, the default TiktokenTokenizer is used.
     """
 
-    tiktoken_model_name: str = field(default="gpt-4o-mini")
+    tiktoken_model_name: str = field(default="gpt-4o-mini") # 默认采用gpt-4o-mini模型的字符串切分token方法
     """Model name used for tokenization when chunking text with tiktoken. Defaults to `gpt-4o-mini`."""
 
     chunking_func: Callable[
@@ -403,7 +403,7 @@ class LightRAG:
         # Post-initialization hook to handle backward compatabile tokenizer initialization based on provided parameters
         if self.tokenizer is None:
             if self.tiktoken_model_name:
-                self.tokenizer = TiktokenTokenizer(self.tiktoken_model_name)
+                self.tokenizer = TiktokenTokenizer(self.tiktoken_model_name) # 入口，初始化tokenizer
             else:
                 self.tokenizer = TiktokenTokenizer()
 
@@ -445,29 +445,32 @@ class LightRAG:
         # Initialize document status storage
         self.doc_status_storage_cls = self._get_storage_class(self.doc_status_storage)
 
+        # llm_response_cache 缓存llm_response响应
         self.llm_response_cache: BaseKVStorage = self.key_string_value_json_storage_cls(  # type: ignore
             namespace=NameSpace.KV_STORE_LLM_RESPONSE_CACHE,
             workspace=self.workspace,
             global_config=global_config,
-            embedding_func=self.embedding_func,
+            embedding_func=self.embedding_func, # 向量化方法，内部用到embedding模型
         )
 
+        # 文本分块存储
         self.text_chunks: BaseKVStorage = self.key_string_value_json_storage_cls(  # type: ignore
             namespace=NameSpace.KV_STORE_TEXT_CHUNKS,
             workspace=self.workspace,
-            embedding_func=self.embedding_func,
+            embedding_func=self.embedding_func, # 向量化方法，内部用到embedding模型
         )
 
+        # 上传文件完整文本存储
         self.full_docs: BaseKVStorage = self.key_string_value_json_storage_cls(  # type: ignore
             namespace=NameSpace.KV_STORE_FULL_DOCS,
             workspace=self.workspace,
-            embedding_func=self.embedding_func,
+            embedding_func=self.embedding_func, 
         )
 
         self.full_entities: BaseKVStorage = self.key_string_value_json_storage_cls(  # type: ignore
             namespace=NameSpace.KV_STORE_FULL_ENTITIES,
             workspace=self.workspace,
-            embedding_func=self.embedding_func,
+            embedding_func=self.embedding_func, 
         )
 
         self.full_relations: BaseKVStorage = self.key_string_value_json_storage_cls(  # type: ignore
@@ -482,18 +485,23 @@ class LightRAG:
             embedding_func=self.embedding_func,
         )
 
+        # 实体向量存储
         self.entities_vdb: BaseVectorStorage = self.vector_db_storage_cls(  # type: ignore
             namespace=NameSpace.VECTOR_STORE_ENTITIES,
             workspace=self.workspace,
             embedding_func=self.embedding_func,
             meta_fields={"entity_name", "source_id", "content", "file_path"},
         )
+
+        # 关系向量存储
         self.relationships_vdb: BaseVectorStorage = self.vector_db_storage_cls(  # type: ignore
             namespace=NameSpace.VECTOR_STORE_RELATIONSHIPS,
             workspace=self.workspace,
             embedding_func=self.embedding_func,
             meta_fields={"src_id", "tgt_id", "source_id", "content", "file_path"},
         )
+
+        # 文本块向量存储
         self.chunks_vdb: BaseVectorStorage = self.vector_db_storage_cls(  # type: ignore
             namespace=NameSpace.VECTOR_STORE_CHUNKS,
             workspace=self.workspace,
@@ -550,7 +558,7 @@ class LightRAG:
                 if storage:
                     tasks.append(storage.initialize())
 
-            await asyncio.gather(*tasks)
+            await asyncio.gather(*tasks) # 协程方式同时初始化所有存储
 
             self._storages_status = StoragesStatus.INITIALIZED
             logger.debug("All storage types initialized")
@@ -1114,6 +1122,7 @@ class LightRAG:
 
         return track_id
 
+    # 
     async def apipeline_process_enqueue_documents(
         self,
         split_by_character: str | None = None,
@@ -1216,6 +1225,8 @@ class LightRAG:
                 # Create a semaphore to limit the number of concurrent file processing
                 semaphore = asyncio.Semaphore(self.max_parallel_insert)
 
+                # 核心函数，处理单个文档的异步函数
+                # 提取文档内容->分块文档->并行处理文档相关信息->实体关系图处理->合并节点和边->更新文档状态
                 async def process_document(
                     doc_id: str,
                     status_doc: DocProcessingStatus,
@@ -1252,7 +1263,7 @@ class LightRAG:
                                 pipeline_status["latest_message"] = log_message
                                 pipeline_status["history_messages"].append(log_message)
 
-                            # Get document content from full_docs
+                            # Get document content from full_docs 获取当前文本的所有内容，对应的是kv_store_full_docs
                             content_data = await self.full_docs.get_by_id(doc_id)
                             if not content_data:
                                 raise Exception(
@@ -1260,7 +1271,7 @@ class LightRAG:
                                 )
                             content = content_data["content"]
 
-                            # Generate chunks from document
+                            # Generate chunks from document 依据max_tokens和切分字符，将文本切分成多个chunk
                             chunks: dict[str, Any] = {
                                 compute_mdhash_id(dp["content"], prefix="chunk-"): {
                                     **dp,
@@ -1274,7 +1285,7 @@ class LightRAG:
                                     split_by_character,
                                     split_by_character_only,
                                     self.chunk_overlap_token_size,
-                                    self.chunk_token_size,
+                                    self.chunk_token_size, # 文本分块
                                 )
                             }
 
@@ -1326,11 +1337,11 @@ class LightRAG:
                             entity_relation_task = None
 
                             # Execute first stage tasks
-                            await asyncio.gather(*first_stage_tasks)
+                            await asyncio.gather(*first_stage_tasks) # 上面三个任务加入事件循环协程处理，负责同步数据
 
                             # Stage 2: Process entity relation graph (after text_chunks are saved)
                             entity_relation_task = asyncio.create_task(
-                                self._process_entity_relation_graph(
+                                self._process_entity_relation_graph( # 从文本块chunks中提取实体关系信息
                                     chunks, pipeline_status, pipeline_status_lock
                                 )
                             )
@@ -1393,7 +1404,7 @@ class LightRAG:
                             try:
                                 # Get chunk_results from entity_relation_task
                                 chunk_results = await entity_relation_task
-                                await merge_nodes_and_edges(
+                                await merge_nodes_and_edges( # 实体关系合并
                                     chunk_results=chunk_results,  # result collected from entity_relation_task
                                     knowledge_graph_inst=self.chunk_entity_relation_graph,
                                     entity_vdb=self.entities_vdb,
@@ -1565,6 +1576,7 @@ class LightRAG:
                 pipeline_status["history_messages"].append(error_msg)
             raise e
 
+    # 内存中的数据持久化到磁盘
     async def _insert_done(
         self, pipeline_status=None, pipeline_status_lock=None
     ) -> None:

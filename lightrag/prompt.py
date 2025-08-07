@@ -4,15 +4,16 @@ from typing import Any
 
 PROMPTS: dict[str, Any] = {}
 
-PROMPTS["DEFAULT_LANGUAGE"] = "English"
-PROMPTS["DEFAULT_TUPLE_DELIMITER"] = "<|>"
-PROMPTS["DEFAULT_RECORD_DELIMITER"] = "##"
-PROMPTS["DEFAULT_COMPLETION_DELIMITER"] = "<|COMPLETE|>"
+PROMPTS["DEFAULT_LANGUAGE"] = "English" # 默认语言
+PROMPTS["DEFAULT_TUPLE_DELIMITER"] = "<|>" # 默认元组分隔符
+PROMPTS["DEFAULT_RECORD_DELIMITER"] = "##" # 默认记录分隔符
+PROMPTS["DEFAULT_COMPLETION_DELIMITER"] = "<|COMPLETE|>" # 默认完成标识符
 
-PROMPTS["DEFAULT_ENTITY_TYPES"] = ["organization", "person", "geo", "event", "category"]
+PROMPTS["DEFAULT_ENTITY_TYPES"] = ["organization", "person", "geo", "event", "category"] # 默认实体类型
 
-PROMPTS["DEFAULT_USER_PROMPT"] = "n/a"
+PROMPTS["DEFAULT_USER_PROMPT"] = "n/a" # 默认用户提示
 
+# 实体抽取主提示词
 PROMPTS["entity_extraction"] = """---Goal---
 Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
 Use {language} as output language.
@@ -54,6 +55,7 @@ Text:
 ######################
 Output:"""
 
+# 实体抽取示例
 PROMPTS["entity_extraction_examples"] = [
     """Example 1:
 
@@ -133,6 +135,7 @@ Output:
 #############################""",
 ]
 
+# 合并关于同一实体的描述信息
 PROMPTS[
     "summarize_entity_descriptions"
 ] = """You are a helpful assistant responsible for generating a comprehensive summary of the data provided below.
@@ -150,6 +153,7 @@ Description List: {description_list}
 Output:
 """
 
+# 提取遗漏的部分
 PROMPTS["entity_continue_extraction"] = """
 MANY entities and relationships were missed in the last extraction. Please find only the missing entities and relationships from previous text.
 
@@ -182,6 +186,7 @@ Format the content-level key words as ("content_keywords"{tuple_delimiter}<high_
 Add new entities and relations below using the same format, and do not include entities and relations that have been previously extracted. :\n
 """.strip()
 
+# 判断是否还存在遗漏实体
 PROMPTS["entity_if_loop_extraction"] = """
 ---Goal---'
 
@@ -230,6 +235,7 @@ When handling relationships with timestamps:
 
 Response:"""
 
+# 关键词提取提示词
 PROMPTS["keywords_extraction"] = """---Role---
 
 You are a helpful assistant tasked with identifying both high-level and low-level keywords in the user's query and conversation history.
@@ -264,6 +270,7 @@ The `Output` should be in JSON format, with no other text before and after the J
 Output:
 """
 
+# 关键词提取示例
 PROMPTS["keywords_extraction_examples"] = [
     """Example 1:
 
@@ -300,6 +307,7 @@ Output:
 """,
 ]
 
+# 简单rag提示词
 PROMPTS["naive_rag_response"] = """---Role---
 
 You are a helpful assistant responding to user query about Document Chunks provided provided in JSON format below.
@@ -333,6 +341,7 @@ When handling content with timestamps:
 
 Response:"""
 
+# 语义相似度比较
 # TODO: deprecated
 PROMPTS[
     "similarity_check"

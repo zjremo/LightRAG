@@ -55,7 +55,7 @@ from dotenv import load_dotenv
 # the OS environment variables take precedence over the .env file
 load_dotenv(dotenv_path=".env", override=False)
 
-
+# 对输入的文本所有内容按照token和切分字符进行切分作为chunk，并进行编号返回
 def chunking_by_token_size(
     tokenizer: Tokenizer,
     content: str,
@@ -66,14 +66,14 @@ def chunking_by_token_size(
 ) -> list[dict[str, Any]]:
     tokens = tokenizer.encode(content)
     results: list[dict[str, Any]] = []
-    if split_by_character:
+    if split_by_character: # 按照字符分割
         raw_chunks = content.split(split_by_character)
         new_chunks = []
-        if split_by_character_only:
+        if split_by_character_only: # 仅仅按照字符分割
             for chunk in raw_chunks:
-                _tokens = tokenizer.encode(chunk)
-                new_chunks.append((len(_tokens), chunk))
-        else:
+                _tokens = tokenizer.encode(chunk) # 将字符串文本转换为tokens列表表示，用于token长度检查
+                new_chunks.append((len(_tokens), chunk)) # 长度以及转化为tokens长度
+        else: # 进行token长度检查，对超长子块进行token进一步分块
             for chunk in raw_chunks:
                 _tokens = tokenizer.encode(chunk)
                 if len(_tokens) > max_token_size:
@@ -82,12 +82,13 @@ def chunking_by_token_size(
                     ):
                         chunk_content = tokenizer.decode(
                             _tokens[start : start + max_token_size]
-                        )
+                        ) # 解码为字符串文本
                         new_chunks.append(
                             (min(max_token_size, len(_tokens) - start), chunk_content)
                         )
                 else:
                     new_chunks.append((len(_tokens), chunk))
+        # 对分块编号
         for index, (_len, chunk) in enumerate(new_chunks):
             results.append(
                 {
@@ -96,7 +97,7 @@ def chunking_by_token_size(
                     "chunk_order_index": index,
                 }
             )
-    else:
+    else: # 直接按照token切分，不必考虑字符
         for index, start in enumerate(
             range(0, len(tokens), max_token_size - overlap_token_size)
         ):
@@ -1204,7 +1205,7 @@ async def merge_nodes_and_edges(
     3. Phase 3: Update full_entities and full_relations storage with final results
 
     Args:
-        chunk_results: List of tuples (maybe_nodes, maybe_edges) containing extracted entities and relationships
+        chunk_results: List of tuples (maybe_nodes, maybe_edges) containing extracted entities and relationships llm提取出的结果包含可能的node和edges
         knowledge_graph_inst: Knowledge graph storage
         entity_vdb: Entity vector database
         relationships_vdb: Relationship vector database
@@ -1221,13 +1222,13 @@ async def merge_nodes_and_edges(
     """
 
     # Collect all nodes and edges from all chunks
-    all_nodes = defaultdict(list)
+    all_nodes = defaultdict(list) # collections中提供的方法，当访问不存在的键时候，会自动创建一个默认值
     all_edges = defaultdict(list)
 
     for maybe_nodes, maybe_edges in chunk_results:
         # Collect nodes
         for entity_name, entities in maybe_nodes.items():
-            all_nodes[entity_name].extend(entities)
+            all_nodes[entity_name].extend(entities) # all_nodes[entity_name]由于defaultdict会自动创建一个空list，根据extend方法连接
 
         # Collect edges with sorted keys for undirected graph
         for edge_key, edges in maybe_edges.items():
@@ -1280,7 +1281,7 @@ async def merge_nodes_and_edges(
                             "file_path": entity_data.get("file_path", "unknown_source"),
                         }
                     }
-                    await entity_vdb.upsert(data_for_vdb)
+                    await entity_vdb.upsert(data_for_vdb) # 上传到entity_vdb实体向量数据库
                 return entity_data
 
     # Create entity processing tasks
@@ -1462,6 +1463,7 @@ async def merge_nodes_and_edges(
         pipeline_status["history_messages"].append(log_message)
 
 
+# 提取实体关系
 async def extract_entities(
     chunks: dict[str, TextChunkSchema],
     global_config: dict[str, str],
@@ -1497,9 +1499,10 @@ async def extract_entities(
         language=language,
     )
     # add example's format
-    examples = examples.format(**example_context_base)
+    examples = examples.format(**example_context_base) # 拼接成完整的提示词，里面是examples输出样例
 
     entity_extract_prompt = PROMPTS["entity_extraction"]
+    
     context_base = dict(
         tuple_delimiter=PROMPTS["DEFAULT_TUPLE_DELIMITER"],
         record_delimiter=PROMPTS["DEFAULT_RECORD_DELIMITER"],
@@ -1515,7 +1518,7 @@ async def extract_entities(
     processed_chunks = 0
     total_chunks = len(ordered_chunks)
 
-    async def _process_extraction_result(
+    async def _process_extraction_result(# 结果解析和结构化
         result: str, chunk_key: str, file_path: str = "unknown_source"
     ):
         """Process a single extraction result (either initial or gleaning)

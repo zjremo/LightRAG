@@ -150,8 +150,8 @@ def create_app(args):
 
         try:
             # Initialize database connections
-            await rag.initialize_storages()
-            await initialize_pipeline_status()
+            await rag.initialize_storages() # 初始化数据库存储
+            await initialize_pipeline_status() # 初始化pipeline
 
             # Data migration regardless of storage implementation
             await rag.check_and_migrate_data()
